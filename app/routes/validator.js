@@ -1,8 +1,8 @@
-const { body,check} = require('express-validator/check');
+const { body,check } = require('express-validator/check');
 
 // var validator = require('validator');
 
-exports.validate = (method) => {
+exports.validate = method=>{
     switch (method) {
       case 'sendMail': {
        return [ 
