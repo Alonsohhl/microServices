@@ -5,7 +5,9 @@ const appValidator = require("./validator").validate;
 
 
 // router.post('/sendEmail',appValidator('sendMail2'), mailController.enviar);
- router.post('/sendEmail',appValidator('sendMail'), mailController.enviar);
+router.get('/', mailController.index);
+router.post('/sendEmail',appValidator('sendMail'), mailController.enviar);
+
 
 
 module.exports = router;

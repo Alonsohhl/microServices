@@ -1,5 +1,5 @@
 require('dotenv').config();
-nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 const { validationResult } = require('express-validator/check');
 
 
@@ -26,7 +26,9 @@ const validationHandler = next => result => {
     );
 };
 
-
+mailController.index = (req, res) =>{
+  res.send('Micro Services Server');
+}
 mailController.enviar = (req, res,next) => {
    
       
