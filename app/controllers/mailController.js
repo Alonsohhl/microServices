@@ -27,6 +27,8 @@ const validationHandler = next => result => {
 };
 
 mailController.index = (req, res) =>{
+  // eslint-disable-next-line no-console
+  console.log('Micro Services');
   res.send('Micro Services Server');
 }
 mailController.enviar = (req, res,next) => {
